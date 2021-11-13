@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CFI Sign-Up Form</title>
+        <link rel="stylesheet" href="cfi_form.css">
+    </head>
+
+    <div class="container">
+    <header class="header">
+        <h1 id="title" class="text-center">CFI Membership Sign-Up Survey</h1>
+        <p id="description" class="text-center">Help make Coding For Immigrants (CFI) better for you and its members!</p>
+        <br>
+    </header>
+
+    <form id="survey-form">
+        <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <br>
+        <input type="text" name="name" id="name" class="form-control" maxlength="100" placeholder="Enter Your Full Name" required></input>
+        </div>
+    
+        <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <br>
+        <input type="email" name="email" id="email" class="form-control" maxlength="100" placeholder="Enter Your Email" required></input>
+        </div>
+        
+        <div class="form-group">
+        <label id="number-label" for="number">Age <span class="clue">(Optional)</span></label>
+        <br>
+        <input type="number" name="age" id="number" min="14" max="150" class="form-control" placeholder="Enter Your Age"></input>
+    </div>
+
+    <div class="form-group">
+        <label id="dropdown" for="reason">What is your top reason for joining CFI?</label>
+        <br>
+        <select id="dropdown" name="reason" required>
+        <option disabled selected value>Select Your Reason</option>
+        <option value="community">Community Support</option>
+        <option value="project">Project Support</option>
+        <option value="advice">Career Advice</option>
+        <option value="development">Career Development</option>
+        <option value="skills">Up-Skilling</option>
+        <option value="leadership">Thought Leadership</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <p>Are you currently employed?</p>
+        <label>
+        <input name="employed" value="yes" type="radio" class="input-radio" checked>Yes</input>
+        </label>
+        <label>
+        <input name="employed" value="no" type="radio" class="input-radio" checked>No</input>
+        </label>
+    </div>
+
+    <div class="form-group">
+        <p>Which languages are you hoping to learn/improve on? <span class="clue">(Check all that apply)</span></p>
+        <label>
+        <input name="language" value="c++" type="checkbox" class="input-checkboxes">C++</input>
+        </label>
+        <label>
+        <input name="language" value="c#" type="checkbox" class="input-checkboxes">C#</input>
+        </label>
+        <label>
+        <input name="language" value="css" type="checkbox" class="input-checkboxes">CSS</input>
+        </label>
+        <label>
+        <input name="language" value="html" type="checkbox" class="input-checkboxes">HTML</input>
+        </label>
+        <label>
+        <input name="language" value="java" type="checkbox" class="input-checkboxes">Java</input>
+        </label>
+        <label>
+        <input name="language" value="javascript" type="checkbox" class="input-checkboxes">Javascript</input>
+        </label>
+        <label>
+        <input name="language" value="kotlin" type="checkbox" class="input-checkboxes">Kotlin</input>
+        </label>
+        <label>
+        <input name="language" value="python" type="checkbox" class="input-checkboxes">Python</input>
+        </label>
+        <label>
+        <input name="language" value="r" type="checkbox" class="input-checkboxes">R</input>
+        </label>
+        <label>
+        <input name="language" value="ruby" type="checkbox" class="input-checkboxes">Ruby</input>
+        </label>
+        <label>
+        <input name="language" value="sql" type="checkbox" class="input-checkboxes">SQL</input>
+        </label>
+        <label>
+        <input name="language" value="swift" type="checkbox" class="input-checkboxes">Swift</input>
+        </label>
+    </div>
+
+    <div class="form-group">
+        <p>Which evenings work best for you to meet with CFI? <span class="clue">(Check all that apply)</span></p>
+        <label>
+        <input name="evenings" value="monday" type="checkbox" class="input-checkboxes">Monday</input>
+        </label>
+        <label>
+        <input name="evenings" value="tuesday" type="checkbox" class="input-checkboxes">Tuesday</input>
+        </label>
+        <label>
+        <input name="evenings" value="wednesday" type="checkbox" class="input-checkboxes">Wednesday</input>
+        </label>
+        <label>
+        <input name="evenings" value="thursday" type="checkbox" class="input-checkboxes">Thursday</input>
+        </label>
+        <label>
+        <input name="evenings" value="friday" type="checkbox" class="input-checkboxes">Friday</input>
+        </label>
+        <label>
+        <input name="evenings" value="saturday" type="checkbox" class="input-checkboxes">Saturday</input>
+        </label>
+        <label>
+        <input name="evenings" value="Sunday" type="checkbox" class="input-checkboxes">Sunday</input>
+        </label>
+    </div>
+    
+    <div class="form-group">
+        <p>What additional expectations do you have with CFI? What are you hoping to accomplish while participating in this group?</p>
+        <textarea id="expectations" class="input-textarea" name="expectations" placeholder="Enter your expectations here..." maxlength="500"></textarea>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+    </form>
+    </div>
+</html>

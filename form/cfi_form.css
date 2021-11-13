@@ -1,0 +1,145 @@
+/* Universal Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+html {
+  box-sizing: border-box;
+  background: #F3CBFF;
+  background-image: url(https://images.unsplash.com/photo-1585758942414-7a30b116f2af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.35;
+  color: #FAF2A1;
+}
+
+h1 {
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1.35rem;
+}
+
+h1, p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.35rem;
+}
+
+input, button, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%
+}
+
+.header {
+  padding: 0 0.625rem;
+}
+
+.clue {
+  margin-left: 0.15rem;
+  font-size: 1.1rem;
+  color: #FAF2A1;
+}
+
+.text-center {
+  text-align: center;
+  text-shadow: 0.5px 0.5px #8093f1;
+}
+
+h1.text-center {
+  padding-top: 4rem;
+}
+
+p.text-center {
+  font-style: italic;
+  padding-bottom: 1rem;
+}
+
+/* Form Styles */
+
+form {
+  background: #b388eb;
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.5rem;
+}
+
+.form-group {
+  margin: 0 2rem 1.5rem 0.75rem;
+  padding: 0.25rem;
+  color: #FAF2A1;
+  box-shadow: #495057;
+  text-shadow: 0.5px 0.5px #8093f1;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.25rem;
+  padding: 0.25rem 0.25rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 2px solid #d0d1ff;
+  border-radius: 0.5rem;
+}
+
+.input-radio, .input-checkboxes {
+  display: inline-block;
+  margin-right: 0.425rem;
+  min-height: 1rem;
+  min-width: 1rem;
+}
+
+.input-textarea {
+  min-height: 125px;
+  width: 100%;
+  padding: 0.525rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.725rem;
+  background: #FAF2A1;
+  color: #47126b;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  animation-name: background-color;
+  animation-fill-mode: forwards;
+  animation-duration: 500ms;
+}
+
+@keyframes background-color {
+  100% {
+    background-color: #FBD87F;
+  }
+}
+
